@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f6f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 900px;
+  align-self: center;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  margin-top: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: black;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: skyblue;
+}
+
+button {
+  padding: 8px 14px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button[type="submit"] {
+  background-color: green;
+  color: white;
+}
+
+.edit-btn {
+  background-color: skyblue;
+  color: white;
+}
+
+.delete-btn {
+  background-color: red;
+  color: white;
+}
+
+.download-btn {
+  background-color: purple;
+  color: white;
+}
+
+.search-box {
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: skyblue;
+  color: white;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid wheat;
+}
+
+tr:hover {
+  background-color: white;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
