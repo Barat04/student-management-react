@@ -14,7 +14,6 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
 
-  // Simulated loading
   useEffect(() => {
     setTimeout(() => {
       const saved = localStorage.getItem("students");
@@ -23,7 +22,6 @@ function App() {
     }, 1000);
   }, []);
 
-  // Save to localStorage
   useEffect(() => {
     localStorage.setItem("students", JSON.stringify(students));
   }, [students]);
@@ -50,12 +48,10 @@ function App() {
     setEditingStudent(student);
   }
 
-  // Filter
   const filteredStudents = students.filter((s) =>
     s.name.toLowerCase().includes(search.toLowerCase())
   );
 
-  // Excel download
   function exportExcel(data) {
     const worksheet = XLSX.utils.json_to_sheet(data);
     const workbook = XLSX.utils.book_new();
