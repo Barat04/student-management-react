@@ -27,7 +27,7 @@ export default function StudentForm({
     }
     const nameRegex = /^[A-Za-z\s]+$/;
     if (!nameRegex.test(name)) {
-      setError("Enter valid name");
+      setError("Enter valid name. Name must include only Alphabets");
       return;
     }
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -38,7 +38,7 @@ export default function StudentForm({
     }
 
     if (age <= 0 || age > 100) {
-      setError("Enter Valid Age");
+      setError("Enter Valid Age.(Between 1 and 100)");
       return;
     }
 
