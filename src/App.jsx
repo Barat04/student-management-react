@@ -96,9 +96,19 @@ function App() {
       <br />
       <br />
 
-      <button onClick={() => exportExcel(students)}>Download All</button>
+      <button
+        className="download-btn"
+        disabled={students.length === 0}
+        onClick={() => exportExcel(students)}
+      >
+        Download All
+      </button>
 
-      <button onClick={() => exportExcel(filteredStudents)}>
+      <button
+        className="download-btn"
+        disabled={!search.trim() || filteredStudents.length === 0}
+        onClick={() => exportExcel(filteredStudents)}
+      >
         Download Filtered
       </button>
 
